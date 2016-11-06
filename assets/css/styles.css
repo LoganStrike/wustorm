@@ -1,0 +1,155 @@
+/* ------------ common styles */
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.wustorm-group:before,
+.wustorm-group:after {
+	content: " ";
+	display: table;
+}
+.wustorm-group:after {
+	clear: both;
+}
+.wustorm-list {
+	border: 1px solid #666;
+	/* border: 1px solid #ddd; */
+	border-bottom: none;
+	border-radius: 4px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.wustorm-list li {
+	border-bottom: 1px solid #666;
+	/* border-bottom: 1px solid #ddd; */
+	border-radius: 4px;
+	line-height: 1.5;
+	padding: 8px;
+}
+.wustorm-list li:nth-of-type(odd) {
+	/* background-color: #f9f9f9; */
+	background-color: #444;
+}
+.wustorm-table {
+	border: 1px solid #666;
+	/* border: 1px solid #ddd; */
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	max-width: 100%;
+	width: 100%;
+}
+.wustorm-table > thead > tr > th,
+.wustorm-table > tbody > tr > th,
+.wustorm-table > tfoot > tr > th,
+.wustorm-table > thead > tr > td,
+.wustorm-table > tbody > tr > td,
+.wustorm-table > tfoot > tr > td {
+	border: 1px solid #666;
+	/* border: 1px solid #ddd; */
+	line-height: 1.5;
+	padding: 8px;
+	vertical-align: top;
+}
+.wustorm-table > thead > tr > th {
+	border-bottom: 2px solid #666;
+	/* border-bottom: 2px solid #ddd; */
+	vertical-align: bottom;
+}
+.wustorm-table > thead > tr > th,
+.wustorm-table > thead > tr > td {
+	border-bottom-width: 2px;
+}
+.wustorm-table > tbody > tr:nth-of-type(odd) {
+	background-color: #444;
+	/* background-color: #f9f9f9; */
+}
+/* ------------ layout & data styles */
+.wustorm-container {
+	background-color: #333;
+	/* background-color: #fff; */
+	border: 2px solid #000;
+	/* border: 1px solid #ddd; */
+	border-radius: 4px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #eee;
+	/* color: #333; */
+	margin: 20px auto;
+	max-width: 640px;
+	padding: 6px;
+}
+.wustorm-current-observations {
+	padding: 10px 10px 0 10px;
+}
+.wustorm-location {
+	background-color: #555;
+	border: 1px solid #000;
+	/* background-color: #ededed; */
+	/* border: 1px solid #ddd; */
+	border-radius: 4px;
+	font-size: 150%;
+	margin: 0 0 16px 0;
+	padding: 8px;
+	text-align: center;
+}
+.wustorm-summary,
+.wustorm-details {
+	float: left;
+	width: 50%;
+}
+.wustorm-summary {
+	text-align: center;
+}
+.wustorm-details {
+	font-size: 90%;
+}
+.wustorm-current-temperature {
+	font-size: 150%;
+	margin-bottom: 16px;
+}
+.wustorm-current-weather-icon {
+	margin-bottom: 4px;
+}
+.wustorm-current-weather {
+	font-size: 90%;
+	margin-bottom: 16px;
+}
+.wustorm-footer {
+	color: #777;
+	/* color: #666; */
+	font-size: 90%;
+	text-align: center;
+}
+.wustorm-observation-location {
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+	/* border-top: 1px solid #ededed; */
+	/* border-bottom: 1px solid #ededed; */
+	margin: 10px 0 16px 0;
+	padding: 10px 0;
+}
+.wustorm-attribution {
+	font-size: 75%;
+}
+.wustorm-attribution-img{
+	vertical-align: bottom;
+}
+.wustorm-error {
+	background-color: #f2dede;
+	border: 1px solid ebccd1;
+	border-radius: 4px;
+	color: #a94442;
+	font-size: 16px;
+	margin-bottom: 16px;
+	padding: 15px;
+}
+@media (max-width: 543px) {
+	.wustorm-summary,
+	.wustorm-details {
+		float: none;
+		width: auto;
+	}
+}

@@ -1,0 +1,476 @@
+{
+	"response": {
+		"version": "0.1",
+		"termsofService": "http://www.wunderground.com/weather/api/d/terms.html",
+		"features": {
+			"conditions": 1,
+			"forecast": 1,
+			"alerts": 1
+		}
+	},
+	"current_observation": {
+		"image": {
+			"url": "http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+			"title": "Weather Underground",
+			"link": "http://www.wunderground.com"
+		},
+		"display_location": {
+			"full": "Las Vegas, NV",
+			"city": "Las Vegas",
+			"state": "NV",
+			"state_name": "Nevada",
+			"country": "US",
+			"country_iso3166": "US",
+			"zip": "89117",
+			"magic": "1",
+			"wmo": "99999",
+			"latitude": "36.13000107",
+			"longitude": "-115.27999878",
+			"elevation": "799.2"
+		},
+		"observation_location": {
+			"full": "W Charleston, Las Vegas, Nevada",
+			"city": "W Charleston, Las Vegas",
+			"state": "Nevada",
+			"country": "US",
+			"country_iso3166": "US",
+			"latitude": "36.156113",
+			"longitude": "-115.276688",
+			"elevation": "2654 ft"
+		},
+		"estimated": {},
+		"station_id": "KNVLASVE259",
+		"observation_time": "Last Updated on October 22, 4:18 PM PDT",
+		"observation_time_rfc822": "Sat, 22 Oct 2016 16:18:19 -0700",
+		"observation_epoch": "1477178299",
+		"local_time_rfc822": "Sat, 22 Oct 2016 16:18:38 -0700",
+		"local_epoch": "1477178318",
+		"local_tz_short": "PDT",
+		"local_tz_long": "America/Los_Angeles",
+		"local_tz_offset": "-0700",
+		"weather": "Clear",
+		"temperature_string": "87.6 F (30.9 C)",
+		"temp_f": 87.6,
+		"temp_c": 30.9,
+		"relative_humidity": "14%",
+		"wind_string": "From the ESE at 2.2 MPH",
+		"wind_dir": "ESE",
+		"wind_degrees": 112,
+		"wind_mph": 2.2,
+		"wind_gust_mph": 0,
+		"wind_kph": 3.5,
+		"wind_gust_kph": 0,
+		"pressure_mb": "1010",
+		"pressure_in": "29.83",
+		"pressure_trend": "-",
+		"dewpoint_string": "32 F (0 C)",
+		"dewpoint_f": 32,
+		"dewpoint_c": 0,
+		"heat_index_string": "84 F (29 C)",
+		"heat_index_f": 84,
+		"heat_index_c": 29,
+		"windchill_string": "NA",
+		"windchill_f": "NA",
+		"windchill_c": "NA",
+		"feelslike_string": "84 F (29 C)",
+		"feelslike_f": "84",
+		"feelslike_c": "29",
+		"visibility_mi": "10.0",
+		"visibility_km": "16.1",
+		"solarradiation": "--",
+		"UV": "2",
+		"precip_1hr_string": "-999.00 in ( 0 mm)",
+		"precip_1hr_in": "-999.00",
+		"precip_1hr_metric": " 0",
+		"precip_today_string": "0.00 in (0 mm)",
+		"precip_today_in": "0.00",
+		"precip_today_metric": "0",
+		"icon": "clear",
+		"icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+		"forecast_url": "http://www.wunderground.com/US/NV/Las_Vegas.html",
+		"history_url": "http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KNVLASVE259",
+		"ob_url": "http://www.wunderground.com/cgi-bin/findweather/getForecast?query=36.156113,-115.276688",
+		"nowcast": ""
+	},
+	"forecast": {
+		"txt_forecast": {
+			"date": "3:15 PM PDT",
+			"forecastday": [
+				{
+					"period": 0,
+					"icon": "clear",
+					"icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+					"title": "Saturday",
+					"fcttext": "Mostly clear. Lows overnight in the low 60s.",
+					"fcttext_metric": "A few clouds. Low 16C.",
+					"pop": "0"
+				},
+				{
+					"period": 1,
+					"icon": "nt_clear",
+					"icon_url": "http://icons.wxug.com/i/c/k/nt_clear.gif",
+					"title": "Saturday Night",
+					"fcttext": "A few passing clouds. Low 61F. Winds SW at 5 to 10 mph.",
+					"fcttext_metric": "Mostly clear. Low 16C. Winds SW at 10 to 15 km/h.",
+					"pop": "0"
+				},
+				{
+					"period": 2,
+					"icon": "mostlycloudy",
+					"icon_url": "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+					"title": "Sunday",
+					"fcttext": "Partly cloudy skies in the morning will give way to cloudy skies during the afternoon. Slight chance of an afternoon shower. High around 80F. SE winds shifting to SW at 10 to 15 mph.",
+					"fcttext_metric": "A mix of clouds and sun in the morning followed by cloudy skies during the afternoon. Slight chance of an afternoon shower. High 28C. ESE winds shifting to SW at 15 to 25 km/h.",
+					"pop": "20"
+				},
+				{
+					"period": 3,
+					"icon": "nt_chancerain",
+					"icon_url": "http://icons.wxug.com/i/c/k/nt_chancerain.gif",
+					"title": "Sunday Night",
+					"fcttext": "Considerable cloudiness with occasional rain showers. Thunder possible. Low 61F. Winds SSW at 5 to 10 mph. Chance of rain 50%.",
+					"fcttext_metric": "Mostly cloudy with some showers late. Thunder possible. Low 16C. Winds SSW at 10 to 15 km/h. Chance of rain 50%.",
+					"pop": "50"
+				},
+				{
+					"period": 4,
+					"icon": "chancetstorms",
+					"icon_url": "http://icons.wxug.com/i/c/k/chancetstorms.gif",
+					"title": "Monday",
+					"fcttext": "Isolated thunderstorms in the morning. Mostly cloudy skies late. High 73F. Winds SSE at 10 to 15 mph. Chance of rain 30%.",
+					"fcttext_metric": "Intervals of clouds and sunshine in the morning with more clouds for later in the day. A stray shower or thunderstorm is possible. High 24C. Winds SSE at 15 to 25 km/h.",
+					"pop": "30"
+				},
+				{
+					"period": 5,
+					"icon": "nt_partlycloudy",
+					"icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+					"title": "Monday Night",
+					"fcttext": "Some clouds early will give way to generally clear conditions overnight. Low 59F. Winds SW at 5 to 10 mph.",
+					"fcttext_metric": "Some clouds early will give way to generally clear conditions overnight. Low 16C. Winds SW at 10 to 15 km/h.",
+					"pop": "0"
+				},
+				{
+					"period": 6,
+					"icon": "clear",
+					"icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+					"title": "Tuesday",
+					"fcttext": "A mainly sunny sky. High 76F. Winds SE at 5 to 10 mph.",
+					"fcttext_metric": "A mainly sunny sky. High around 25C. Winds SE at 10 to 15 km/h.",
+					"pop": "0"
+				},
+				{
+					"period": 7,
+					"icon": "nt_clear",
+					"icon_url": "http://icons.wxug.com/i/c/k/nt_clear.gif",
+					"title": "Tuesday Night",
+					"fcttext": "Clear skies. Low 58F. Winds light and variable.",
+					"fcttext_metric": "Clear skies. Low around 15C. Winds light and variable.",
+					"pop": "0"
+				}
+			]
+		},
+		"simpleforecast": {
+			"forecastday": [
+				{
+					"date": {
+						"epoch": "1477188000",
+						"pretty": "7:00 PM PDT on October 22, 2016",
+						"day": 22,
+						"month": 10,
+						"year": 2016,
+						"yday": 295,
+						"hour": 19,
+						"min": "00",
+						"sec": 0,
+						"isdst": "1",
+						"monthname": "October",
+						"monthname_short": "Oct",
+						"weekday_short": "Sat",
+						"weekday": "Saturday",
+						"ampm": "PM",
+						"tz_short": "PDT",
+						"tz_long": "America/Los_Angeles"
+					},
+					"period": 1,
+					"high": {
+						"fahrenheit": "90",
+						"celsius": "32"
+					},
+					"low": {
+						"fahrenheit": "61",
+						"celsius": "16"
+					},
+					"conditions": "Clear",
+					"icon": "clear",
+					"icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+					"skyicon": "",
+					"pop": 0,
+					"qpf_allday": {
+						"in": 0,
+						"mm": 0
+					},
+					"qpf_day": {
+						"in": null,
+						"mm": null
+					},
+					"qpf_night": {
+						"in": 0,
+						"mm": 0
+					},
+					"snow_allday": {
+						"in": 0,
+						"cm": 0
+					},
+					"snow_day": {
+						"in": null,
+						"cm": null
+					},
+					"snow_night": {
+						"in": 0,
+						"cm": 0
+					},
+					"maxwind": {
+						"mph": 0,
+						"kph": 0,
+						"dir": "",
+						"degrees": 0
+					},
+					"avewind": {
+						"mph": 2,
+						"kph": 2,
+						"dir": "ESE",
+						"degrees": 122
+					},
+					"avehumidity": 13,
+					"maxhumidity": 0,
+					"minhumidity": 0
+				},
+				{
+					"date": {
+						"epoch": "1477274400",
+						"pretty": "7:00 PM PDT on October 23, 2016",
+						"day": 23,
+						"month": 10,
+						"year": 2016,
+						"yday": 296,
+						"hour": 19,
+						"min": "00",
+						"sec": 0,
+						"isdst": "1",
+						"monthname": "October",
+						"monthname_short": "Oct",
+						"weekday_short": "Sun",
+						"weekday": "Sunday",
+						"ampm": "PM",
+						"tz_short": "PDT",
+						"tz_long": "America/Los_Angeles"
+					},
+					"period": 2,
+					"high": {
+						"fahrenheit": "80",
+						"celsius": "27"
+					},
+					"low": {
+						"fahrenheit": "61",
+						"celsius": "16"
+					},
+					"conditions": "Mostly Cloudy",
+					"icon": "mostlycloudy",
+					"icon_url": "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+					"skyicon": "",
+					"pop": 20,
+					"qpf_allday": {
+						"in": 0.13,
+						"mm": 3
+					},
+					"qpf_day": {
+						"in": 0,
+						"mm": 0
+					},
+					"qpf_night": {
+						"in": 0.13,
+						"mm": 3
+					},
+					"snow_allday": {
+						"in": 0,
+						"cm": 0
+					},
+					"snow_day": {
+						"in": 0,
+						"cm": 0
+					},
+					"snow_night": {
+						"in": 0,
+						"cm": 0
+					},
+					"maxwind": {
+						"mph": 15,
+						"kph": 24,
+						"dir": "SSW",
+						"degrees": 195
+					},
+					"avewind": {
+						"mph": 12,
+						"kph": 19,
+						"dir": "SSW",
+						"degrees": 195
+					},
+					"avehumidity": 20,
+					"maxhumidity": 0,
+					"minhumidity": 0
+				},
+				{
+					"date": {
+						"epoch": "1477360800",
+						"pretty": "7:00 PM PDT on October 24, 2016",
+						"day": 24,
+						"month": 10,
+						"year": 2016,
+						"yday": 297,
+						"hour": 19,
+						"min": "00",
+						"sec": 0,
+						"isdst": "1",
+						"monthname": "October",
+						"monthname_short": "Oct",
+						"weekday_short": "Mon",
+						"weekday": "Monday",
+						"ampm": "PM",
+						"tz_short": "PDT",
+						"tz_long": "America/Los_Angeles"
+					},
+					"period": 3,
+					"high": {
+						"fahrenheit": "73",
+						"celsius": "23"
+					},
+					"low": {
+						"fahrenheit": "59",
+						"celsius": "15"
+					},
+					"conditions": "Chance of a Thunderstorm",
+					"icon": "chancetstorms",
+					"icon_url": "http://icons.wxug.com/i/c/k/chancetstorms.gif",
+					"skyicon": "",
+					"pop": 30,
+					"qpf_allday": {
+						"in": 0.02,
+						"mm": 1
+					},
+					"qpf_day": {
+						"in": 0.02,
+						"mm": 1
+					},
+					"qpf_night": {
+						"in": 0,
+						"mm": 0
+					},
+					"snow_allday": {
+						"in": 0,
+						"cm": 0
+					},
+					"snow_day": {
+						"in": 0,
+						"cm": 0
+					},
+					"snow_night": {
+						"in": 0,
+						"cm": 0
+					},
+					"maxwind": {
+						"mph": 15,
+						"kph": 24,
+						"dir": "SSE",
+						"degrees": 156
+					},
+					"avewind": {
+						"mph": 11,
+						"kph": 18,
+						"dir": "SSE",
+						"degrees": 156
+					},
+					"avehumidity": 49,
+					"maxhumidity": 0,
+					"minhumidity": 0
+				},
+				{
+					"date": {
+						"epoch": "1477447200",
+						"pretty": "7:00 PM PDT on October 25, 2016",
+						"day": 25,
+						"month": 10,
+						"year": 2016,
+						"yday": 298,
+						"hour": 19,
+						"min": "00",
+						"sec": 0,
+						"isdst": "1",
+						"monthname": "October",
+						"monthname_short": "Oct",
+						"weekday_short": "Tue",
+						"weekday": "Tuesday",
+						"ampm": "PM",
+						"tz_short": "PDT",
+						"tz_long": "America/Los_Angeles"
+					},
+					"period": 4,
+					"high": {
+						"fahrenheit": "76",
+						"celsius": "24"
+					},
+					"low": {
+						"fahrenheit": "58",
+						"celsius": "14"
+					},
+					"conditions": "Clear",
+					"icon": "clear",
+					"icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+					"skyicon": "",
+					"pop": 0,
+					"qpf_allday": {
+						"in": 0,
+						"mm": 0
+					},
+					"qpf_day": {
+						"in": 0,
+						"mm": 0
+					},
+					"qpf_night": {
+						"in": 0,
+						"mm": 0
+					},
+					"snow_allday": {
+						"in": 0,
+						"cm": 0
+					},
+					"snow_day": {
+						"in": 0,
+						"cm": 0
+					},
+					"snow_night": {
+						"in": 0,
+						"cm": 0
+					},
+					"maxwind": {
+						"mph": 10,
+						"kph": 16,
+						"dir": "SE",
+						"degrees": 142
+					},
+					"avewind": {
+						"mph": 7,
+						"kph": 11,
+						"dir": "SE",
+						"degrees": 142
+					},
+					"avehumidity": 47,
+					"maxhumidity": 0,
+					"minhumidity": 0
+				}
+			]
+		}
+	},
+	"query_zone": "020",
+	"alerts": []
+}
