@@ -48,7 +48,7 @@
 							<?php echo( $wustorm_current_observation_observation_time ); ?>
 							<br />
 							Powered by Weather Underground
-							<a href="https://www.wunderground.com/"><img src="./assets/img/wundergroundLogo_4c_rev_horz_90px.png" alt="Weather Underground" class="wustorm-attribution-img" /></a>
+							<a href="https://www.wunderground.com/<?php echo ( $wustorm_referral_key_query_str ) ?>"><img src="./assets/img/wundergroundLogo_4c_rev_horz_90px.png" alt="Weather Underground" class="wustorm-attribution-img" /></a>
 					</div>
 				</div>
 			</div>

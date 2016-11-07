@@ -33,10 +33,10 @@ class Wunderground_Data {
 	 */
 	function __construct() {
 
-		$this->live_api_url = $this->url . WUSTORM_API_KEY .
-				'/conditions/forecast/alerts/q/' . WUSTORM_API_ZIP . '.json';
+		$this->live_api_url = $this->url . trim( WUSTORM_API_KEY ) .
+				'/conditions/forecast/alerts/q/' . trim( WUSTORM_API_ZIP ) . '.json';
 
-		if (WUSTORM_API_KEY && WUSTORM_API_KEY != 'api_key_here') {
+		if ( trim( WUSTORM_API_KEY ) && WUSTORM_API_KEY != 'api_key_here') {
 			list( $this->json_response,$this->http_status_code ) = $this->get_url( $this->live_api_url );
 		}
 	}
@@ -81,8 +81,8 @@ class Wunderground_Data {
 	 */
 	function get_response() {
 
-		if (200 !== $this->http_status_code) {
-			if (!WUSTORM_API_KEY || WUSTORM_API_KEY == 'api_key_here') {
+		if ( 200 !== $this->http_status_code ) {
+			if ( !trim( WUSTORM_API_KEY ) || WUSTORM_API_KEY == 'api_key_here') {
 				$this->error_msg = "No API Key was defined.";
 			}
 			else {

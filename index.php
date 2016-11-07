@@ -3,10 +3,17 @@
 include( './includes/config.php' );
 include( './includes/classes.php' );
 
-// The API returns a lot more data than this
-// but only these are currently being used in final output.
+$wustorm_title_primary = 'Weather';
 $wustorm_error_output =
 $wustorm_weather_icon_img =
+$wustorm_referral_key_query_str = '';
+
+$wustorm_display_location =
+$wustorm_observation_location =
+$wustorm_current_observation = array();
+
+// The API returns a lot more data than this
+// but only these are currently being used in final output.
 $wustorm_display_location_full =
 $wustorm_display_location_city =
 $wustorm_display_location_state =
@@ -28,12 +35,8 @@ $wustorm_current_observation_precip_today_in =
 $wustorm_current_observation_observation_time =
 $wustorm_current_observation_icon_url = '';
 
-$wustorm_display_location =
-$wustorm_observation_location =
-$wustorm_current_observation = array();
-
 // Get data from Weather Underground
-$wustorm_data = new MIS\WU\Wunderground_Data( $wustorm_api_key,$wustorm_api_zip );
+$wustorm_data = new MIS\WU\Wunderground_Data();
 $wustorm_response = $wustorm_data->get_response();
 
 // Check for error messages
@@ -76,6 +79,10 @@ else {
 
 	$wustorm_weather_icon_img = '<img src="' . $wustorm_current_observation_icon_url . '" alt="' .
 			$wustorm_current_observation_weather . '" />';
+}
+
+if ( WUSTORM_REFERRAL_KEY && trim(WUSTORM_REFERRAL_KEY) != '' ) {
+	$wustorm_referral_key_query_str = '?apiref=' . WUSTORM_REFERRAL_KEY;
 }
 
 // Output error text when present
